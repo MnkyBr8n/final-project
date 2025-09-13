@@ -1,0 +1,12 @@
+[tool.pylint.'MAIN']
+max-line-length = 100
+disable = [
+  "missing-module-docstring",  # we'll keep module docstrings, but this avoids surprises
+  "too-few-public-methods"
+]
+
+[tool.pylint.'MESSAGES CONTROL']
+# Keep defaults; we’re not broadly disabling rules.
+
+[tool.pylint.SIMILARITIES]
+min-similarity-lines = 6
